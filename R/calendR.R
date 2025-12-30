@@ -258,7 +258,7 @@ calendR <- function(year = format(Sys.Date(), "%Y"),
 
     # Temporal fix
     if(as.Date(to) - as.Date(from) > 366) {
-      stop("'from' and 'to' can't me more than 1 year appart")
+      stop("'from' and 'to' can't be more than 1 year appart")
     }
 
     if(as.numeric(as.Date(to) - as.Date(from)) > 0) {
